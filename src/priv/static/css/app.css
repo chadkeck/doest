@@ -1,0 +1,53 @@
+table {
+    width: 100%;
+}
+
+tr > div {
+    float: left;
+}
+
+.line-num {
+    float: left;
+    width: 18px;
+    text-align: right;
+}
+
+.doc-contents {
+    float: left;
+    padding-left: 10px;
+    width: 90%;
+}
+
+.document-line {
+}
+
+.comment-link {
+    float: left;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+}
+
+.comment-link:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.comment-container {
+    height: 80px;
+    width: 100%;
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#comment-input {
+    width: 800px;
+    height: 35px;
+    margin: 8px;
+}
+
+.button-container {
+    float: right;
+    margin-right: 8px;
+}

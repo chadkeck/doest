@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Doc</title>
+    <link href="css/app.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="view">
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/app.js"></script>
+
+    <script id="row-template" type="text/x-handlebars-template">
+      <tr class="document-line">
+        <td>
+          <div class="comment-link">
+          </div>
+          <div class="line-num">
+            {{lineNum}}
+          </div>
+          <div class="doc-contents">
+            {{contents}}
+          </div>
+        </td>
+      </tr>
+    </script>
+
+    <script id="comment-template" type="text/x-handlebars-template">
+      <tr class="comment-row">
+        <td>
+          <textarea id="comment-input"></textarea>
+        </td>
+        <td>
+          <input id="save-button" type="button" value="Save">
+          <input id="cancel-button" type="button" value="Cancel">
+        </td>
+      </tr>
+    </script>
+
+  </body>
+</html>
