@@ -1,0 +1,8 @@
+%% -*- mode: erlang; -*-
+{application, doest,
+ [{description  , "Repository publishing application"},
+  {vsn, "0.0.1"},
+  {mod, {doest_app, []}},
+  {registered, [doest_sup]},
+  {applications , [kernel, stdlib, sasl, crypto,
+                   public_key, ssl, cowboy]}]}.
